@@ -32,7 +32,11 @@ def find_nn_cos(v, Wv, k=10):
     pass
     #### YOUR CODE HERE ####
 
+    cos_sim = np.dot(Wv, v) / (np.linalg.norm(Wv, axis=1) * np.linalg.norm(v))
+    nns = np.argsort(cos_sim)[-k:][::-1] # index
+    ds = cos_sim[nns] # cosine similarity
 
+    return nns, ds
 
     #### END(YOUR CODE) ####
 
@@ -58,6 +62,8 @@ def analogy(vA, vB, vC, Wv, k=5):
     """
     pass
     #### YOUR CODE HERE ####
-
+    
+    vD = vC - vA + vB
+    return find_nn_cos(vD, Wv, k)
 
     #### END(YOUR CODE) ####
