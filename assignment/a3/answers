@@ -110,8 +110,8 @@ ml_fairness_1_1: 8.27448
 # (This question is multiple choice.  Delete all but the correct answer).
 ml_fairness_1_2a: 
  - ConceptNet Numberbatch
- - GloVe
- - Word2Vec
+ # - GloVe
+ # - Word2Vec
 
 # Question 2b (/1): Most biased embeddings
 # (This question is multiple choice.  Delete all but the correct answer).
