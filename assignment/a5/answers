@@ -21,41 +21,41 @@
 # Question 1 (/1): What is closest to the goal of a language model?
 # (This question is multiple choice.  Delete all but the correct answer).
 language_models_1_1: 
- - Translate between languages.
+ # - Translate between languages.
  - Score whether a sequence of tokens belongs to a language.
- - Model sentiment of a sentence.
+ # - Model sentiment of a sentence.
 
 # Question 2 (/1): If you don't have much training data, what might happen if you increase "n" of n-grams?
 # (This question is multiple choice.  Delete all but the correct answer).
 language_models_1_2: 
  - Model performance will decrease despite increased sparsity
- - Model performance will improve despite increased sparsity
+ # - Model performance will improve despite increased sparsity
 
 # Question 3 (/1): If you have lots of training data, what might happen if you increase "n" of n-grams?
 # (This question is multiple choice.  Delete all but the correct answer).
 language_models_1_3: 
- - Model performance will decrease despite increased sparsity
+ # - Model performance will decrease despite increased sparsity
  - Model performance will improve despite increased sparsity
 
 # Question 4 (/2): A reasonable technique to handle out-of-vocabulary words?
 # (This question is multiple choice.  Delete all but the correct answer).
 language_models_1_4: 
- - Replacing digits with a special token
- - Replacing rare words in the training set with a special UNK token to get estimates for what contexts these tend to appear in
+ # - Replacing digits with a special token
+ # - Replacing rare words in the training set with a special UNK token to get estimates for what contexts these tend to appear in
  - All of the above
 
 # Question 5 (/2): Smoothing is a technique to... (hint - remember P(next_word | context) must add up to 1 across all next_word-s.
 # (This question is multiple choice.  Delete all but the correct answer).
 language_models_1_5: 
- - Handle sparsity issues even while increasing the amount of context considered
- - Take the probability distribution of words that appear in a context in the training set and flatten / smooth it by taking probability from very high probability words and spreading it across the rest of the vocabulary
+ # - Handle sparsity issues even while increasing the amount of context considered
+ # - Take the probability distribution of words that appear in a context in the training set and flatten / smooth it by taking probability from very high probability words and spreading it across the rest of the vocabulary
  - All of the above
 
 # Question 6 (/4): Let C[x, y, z] be the number of times the text "x y z" appeared in the corpus.  C[the cat] = 8000, C[the cat in] = 5000, C[the cat in the] = 1000 and C[the cat in the hat] = 800.  The size of your vocabulary is 10,000.  What is P(hat | the cat in the)?
-language_models_1_6: 0.00000
+language_models_1_6: 0.80000
 
 # Question 7 (/5): Let C[x, y, z] be the number of times the text "x y z" appeared in the corpus.  C[the cat] = 8000, C[the cat in] = 5000, C[the cat in the] = 1000 and C[the cat in the hat] = 800.  The size of your vocabulary is 10,000.  What is P(hat | the cat in the) if you use "AddK smoothing" with k=5?
-language_models_1_7: 0.00000
+language_models_1_7: 0.01578
 
 
 
@@ -73,27 +73,27 @@ language_models_1_7: 0.00000
 # Question 1 (/3): How does your answer depend on k?
 # (This question is multiple choice.  Delete all but the correct answer).
 language_models_notebook_a_1: 
- - Linearly
- - Inversely
- - Quadratically
+ # - Linearly
+ # - Inversely
+ # - Quadratically
  - It does not.
 
 # Question 2 (/2): P(q | b, a)?
-language_models_notebook_a_2: 0.00000
+language_models_notebook_a_2: 0.00050
 
 # Question 3 (/2): Which context scores the unknown word higher?
 # (This question is multiple choice.  Delete all but the correct answer).
 language_models_notebook_a_3: 
- - a
+ # - a
  - b
- - same
+ # - same
 
 # Question 4 (/2): Which should be higher?
 # (This question is multiple choice.  Delete all but the correct answer).
 language_models_notebook_a_4: 
  - a
- - b
- - same
+ # - b
+ # - same
 
 
 # ------------------------------------------------------------------
@@ -101,21 +101,21 @@ language_models_notebook_a_4:
 # ------------------------------------------------------------------
 
 # Question 1a (/2): What is the average number of times we see a trigram that appears at least once?
-language_models_notebook_e_1a: 0.00000
+language_models_notebook_e_1a: 1.52534
 
 # Question 1b (/2): What is the average number of times we see all trigrams (i.e. including those that appeared zero times)? Please provide exponential notation. Do not round to zero. Hint - look at the size of the vocabulary!
-language_models_notebook_e_1b: 0.00000
+language_models_notebook_e_1b: 4.13800
 
 # Question 2 (/2): Which would you expect would perform better?
 # (This question is multiple choice.  Delete all but the correct answer).
 language_models_notebook_e_2: 
  - trigram
- - 5-gram
+ # - 5-gram
 
 # Question 3 (/1): Which produces more realistic sentences?
 # (This question is multiple choice.  Delete all but the correct answer).
 language_models_notebook_e_3: 
- - Simple Trigram
+ # - Simple Trigram
  - AddK
 
 
@@ -124,12 +124,12 @@ language_models_notebook_e_3:
 # ------------------------------------------------------------------
 
 # Question 1 (/1): What was the score of the highest scoring adjective sequence?
-language_models_notebook_f_1: 0.00000
+language_models_notebook_f_1: -51.95
 
 # Question 2 (/1): Did it match the meme?
 # (This question is multiple choice.  Delete all but the correct answer).
 language_models_notebook_f_2: 
- - True
+ # - True
  - False
 
 
@@ -149,6 +149,6 @@ language_models_notebook_f_2:
 # (This question is multiple choice.  Delete all but the correct answer).
 model_performance_a_1: 
  - O(hV)
- - O(hV^2)
- - O(V)
- - None of the above
+ # - O(hV^2)
+ # - O(V)
+ # - None of the above
